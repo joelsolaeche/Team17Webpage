@@ -161,7 +161,7 @@ footer{
 #ManatiCentro{
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 513px;
   height: 439px;
 }
