@@ -165,3 +165,21 @@ footer{
   }
 
 }
+
+.ManatiContainer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+#ManatiCentro{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 513px;
+  height: 439px;
+}
