@@ -121,8 +121,8 @@ img{
 }
 
 .boton {
-  width: 360px;
-  height: 80px;
+  width: 80%;
+  height: auto;
   background-color: rgba(5, 98, 123, 0.5);
   color: white;
   padding: 10px 20px;
@@ -227,27 +227,32 @@ footer{
     background-color: rgba(86, 193, 178, 0.7);
   }
 
+  .ManatiCentro{
+    display: none;
+
+  }
+
 }
 
 
 /*Imágenes*/
 #imgZoilo{
-  width: 240px;
-  height: 243.871px;
+  width: 60%;
+  height: 60%;
 }
 
 #imgTomas{
-  width: 240px;
-  height: 243.871px;
+  width: 60%;
+  height: 60%;
 }
 
 #imgJoel{
-  width: 240px;
-  height: 243.871px;
+  width: 60%;
+  height: 60%;
 }
 
 #imgMartin{
-  width: 240px;
-  height: 243.871px;
+  width: 60%;
+  height: 60%;
 }
 
