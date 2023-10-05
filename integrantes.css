@@ -147,7 +147,7 @@ footer{
   font-family: "Inter", sans-serif;
 }
 
-.ManatiContainer{
+#ManatiContainer{
   display: flex;
   justify-content: center;
   align-content: center;
@@ -157,12 +157,18 @@ footer{
   padding: 0px;
 }
 
-#ManatiCentro{
+.ManatiCentro{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 513px;
   height: 439px;
+}
+
+.ManatiCentro:hover {
+  transition: 0.5s;
+  height: 70%;
+  width: 40%;
 }
 
 /* media queries */
