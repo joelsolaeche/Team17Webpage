@@ -97,18 +97,17 @@ img{
   text-align: center;
 }
 
-.container-miembros {
+.container_Zoilo_Tomas {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row;
   justify-content: space-between;
-  height: 100vh;
 }
 
-.fila{
+.container_Joel_Martin{
   display: flex;
-    justify-content: space-between;
-    width: 100%;
+  justify-content: space-between;
 }
+
 .miembro {
   text-align: center;
   flex-wrap: wrap;
@@ -224,4 +223,25 @@ footer{
 
 }
 
+
+/*Imágenes*/
+#imgZoilo{
+  width: 240px;
+  height: 243.871px;
+}
+
+#imgTomas{
+  width: 240px;
+  height: 243.871px;
+}
+
+#imgJoel{
+  width: 240px;
+  height: 243.871px;
+}
+
+#imgMartin{
+  width: 240px;
+  height: 243.871px;
+}
 
