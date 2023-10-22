@@ -108,6 +108,7 @@ body {
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
+    perspective: 1000px;
 
   }
 
@@ -118,8 +119,11 @@ body {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    background-color: rgb(24, 151, 151);
 
   }
+
+  
 
   .card__inner.is-flipped {
     transform: rotateY(180deg);
@@ -179,6 +183,43 @@ body {
     background-image: linear-gradient(to bottom left, var(--primary), 10%, var(--secondary) 115%);
   }
 
+  .pp{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+  }
+
+  .card__header h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card__body {
+    padding: 30px;
+  }
+
+  .card__body h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .card__body p{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  
   
 
 

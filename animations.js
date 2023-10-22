@@ -1,7 +1,10 @@
-const card = document.getAnimations.elementById("card")
+const card = document.querySelector('.card__inner');
 
-card.addEventListener("click", flipCard);
+card.addEventListener('click', function() {
+  card.classList.toggle('is-flipped');
+});
 
-function flipcard() {
-    card.classList.toggle("flipCard");
-}
+
+
+// Path: animations.js
+
