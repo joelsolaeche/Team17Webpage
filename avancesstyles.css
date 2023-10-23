@@ -4,7 +4,7 @@ html{
   box-sizing: border-box;
 }
 body {
-  background-image: url(imgs/image\ 12.jpg);
+  background-image: url(imgs/noaa-8EXZXZrj3Tw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center 0;
@@ -106,9 +106,12 @@ body {
 
   .card {
     margin: 100px auto 0;
-    width: 400px;
-    height: 600px;
+    width: 45%;
+    height: 80%;
     perspective: 1000px;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 70px;
 
   }
 
@@ -119,11 +122,10 @@ body {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-    background-color: rgb(24, 151, 151);
+    background-color:  rgb(24, 151, 151);
+    border-radius: 70px;
 
   }
-
-  
 
   .card__inner.is-flipped {
     transform: rotateY(180deg);
@@ -136,7 +138,7 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 70px;
     box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
 
 
@@ -219,8 +221,28 @@ body {
     line-height: 1.5;
   }
 
+  .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
   
+  /* test */
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
   
+  .fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 
 footer{

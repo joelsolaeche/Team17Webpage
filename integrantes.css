@@ -111,6 +111,7 @@ img{
 .miembro {
   text-align: center;
   flex-wrap: wrap;
+  width: 25%;
 }
 
 .foto {
@@ -121,7 +122,7 @@ img{
 }
 
 .boton {
-  width: 80%;
+  width: 90%;
   height: auto;
   background-color: rgba(5, 98, 123, 0.5);
   color: white;
@@ -161,14 +162,14 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 513px;
-  height: 439px;
+  width: 50%;
+  height: auto;
 }
 
 .ManatiCentro:hover {
   transition: 0.5s;
-  height: 70%;
-  width: 40%;
+  height: auto;
+  width: 60%;
 }
 
 /* media queries */
@@ -237,22 +238,22 @@ footer{
 
 /*Imágenes*/
 #imgZoilo{
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: auto;
 }
 
 #imgTomas{
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: auto;
 }
 
 #imgJoel{
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: auto;
 }
 
 #imgMartin{
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: auto;
 }
 
