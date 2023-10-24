@@ -4,7 +4,7 @@ html{
   box-sizing: border-box;
 }
 body {
-  background-image: url(imgs/image\ 11.png);
+  background-image: url(imgs/image\ 19.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center 0;
@@ -17,12 +17,24 @@ body {
 
 }
 
-header{
+input{
+  display: none;
+}
+label{
+  display: none;
+}
+img{
+  width: 94px;
+  height: 81px;
+}
+
+
+
+.header{
   width: 100%;
   margin: 0;
   position: relative;
   height: auto;
-  background-color: rgba(rgba(86, 193, 178, 0.7));
 }
 
 .header-container{
@@ -33,48 +45,9 @@ header{
   background-color: rgba(86, 193, 178, 0.7);
   height: auto;
   width: 100%;
-  max-width: 100%;
+  
 }
 
-main{
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
-  text-align: center;
-  color: #fff;
-}
-
-.container{
-  align-self: center;
-  width: 100%;
-}
-
-.button-info {
-  font-size: 40px;
-  background-color: rgba(8, 64, 89, 0.5);
-  color: #fff;
-  border-radius: 200px;
-  border: none;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 50%;
-}
-
-input{
-  display: none;
-}
-label{
-  display: none;
-}
-img{
-  width: 94px;
-  height: 81px;
-  align-self: flex-start;
-}
 
 .button-list {
   list-style: none;
@@ -101,13 +74,36 @@ img{
   transition: 0.5s;
 }
 
+.button-info {
+  font-size: 40px;
+  background-color: rgba(8, 64, 89, 0.5);
+  color: #fff;
+  border-radius: 200px;
+  border: none;
+  width: 100%;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-family: "Marmelad", sans-serif;
+  height: 50%;
+}
+
+.container{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
 footer{
   background-color: rgba(86, 193, 178, 0.7);
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: auto;
-  margin: 0 auto;
+  height: 3 em;
+  margin: auto;
   text-align: center;
   font-family: "Inter", sans-serif;
 }
@@ -169,5 +165,3 @@ footer{
   }
 
 }
-
-

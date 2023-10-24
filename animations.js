@@ -6,39 +6,17 @@ cards.forEach(function(card) {
 });
 
 
-const cards1 = document.querySelectorAll('.card');
-const fadeInCards = document.querySelectorAll('.fade-in');
-
-function debounce(func, wait = 20, immediate = true) {
-  let timeout;
-  return function() {
-    const context = this, args = arguments;
-    const later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    const callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
-function checkFadeIn() {
-  fadeInCards.forEach(card => {
-    const cardTop = card.getBoundingClientRect().top;
-    const cardBottom = card.getBoundingClientRect().bottom;
-
-    if (cardTop < window.innerHeight && cardBottom >= 0) {
-      card.classList.add('is-visible');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
     } else {
-      card.classList.remove('is-visible');
+      entry.target.classList.remove("show");
     }
   });
-}
-
-window.addEventListener('scroll', debounce(checkFadeIn));
-
-checkFadeIn();
-// Path: animations.js
-
+  
+   
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el)); 

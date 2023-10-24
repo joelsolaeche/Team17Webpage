@@ -6,6 +6,7 @@ html{
 body {
   background-image: url(imgs/noaa-8EXZXZrj3Tw-unsplash.jpg);
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position:center 0;
   background-attachment: fixed;
@@ -92,13 +93,6 @@ body {
     transition: 0.5s;
   }
 
-  .root {
-    --primary: rgb(24, 151, 151);
-    --secondary: #221850;
-    --dark: #000;
-    --light: #fff;
-  }
-
   * {
     margin: 0;
     padding: 0;
@@ -132,6 +126,10 @@ body {
   }
 
   .card__face{
+    background-image: url(imgs/rayyu-maldives-S7td7RmQfs0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -145,7 +143,7 @@ body {
   }
 
   .card__face--front {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +219,7 @@ body {
     line-height: 1.5;
   }
 
-  .contenedor{
+  section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,27 +228,36 @@ body {
     width: 100%;
     height: 100%;
   }
+
+  .card__text{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
   
   /* test */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
 
-  .fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  }
-  
-  .fade-in.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 
 footer{
   background-color: rgba(86, 193, 178, 0.7);
-  position: absolute;
   bottom: 0;
+  position: relative;
   width: 100%;
-  height: 3 em;
+  height: 3em;
   margin: auto;
   text-align: center;
   font-family: "Inter", sans-serif;
