@@ -294,11 +294,24 @@ footer{
   }
 }
 
+@media (max-width: 920px){
+  .card__body p{
+    color: var(--dark);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+}
+
 
 
 @media (max-width: 550px) {
   input:checked ~ ul {
     display: block;
+  }
+
+  .show_this{
+    display:contents;
   }
 
   .button-list li a {
