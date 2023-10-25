@@ -155,7 +155,6 @@ body {
   }
 
   .card__face--front {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +164,7 @@ body {
   .card__face--front h2{
     color: #fff;
     font-size: 32px;
+    align-items: center;
   }
 
   .card__face--back {
@@ -231,13 +231,6 @@ body {
     line-height: 1.5;
   }
 
-  .card__body__AM p{
-    color: var(--dark);
-    font-size: 22px;
-    line-height: 1.5;
-  }
-
-
   section{
     display: flex;
     justify-content: space-between;
@@ -255,15 +248,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
   }
-
-  .card__text_AM{
-    color: var(--dark);
-    font-size: 60px;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-  }
-
 
 
 
@@ -351,5 +335,57 @@ footer{
     display: none;
     background-color: rgba(86, 193, 178, 0.7);
   }
+
+  .card__title{
+    font-size: 20px;
+  }
+  /* Start of the card */
+
+  .card__face--front h2{
+    color: #fff;
+    font-size: 16px;
+    
+  }
+
+  .card__header h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card__body h3{
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .card__body p{
+    color: var(--dark);
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .card__text{
+    color: var(--dark);
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  .card {
+    margin: 100px auto 0;
+    width: 48%;
+    height: 80%;
+    perspective: 1000px;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 70px;
+
+  }
+
 
 }
