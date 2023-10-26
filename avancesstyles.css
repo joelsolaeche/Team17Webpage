@@ -249,6 +249,23 @@ body {
     font-weight: bold;
   }
 
+  .organigrama {
+    width: 60%;
+    height: auto;
+  }
+
+  #div_organigrama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
 
 
   
