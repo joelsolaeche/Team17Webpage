@@ -103,10 +103,10 @@ img{
 
 footer{
   background-color: rgba(86, 193, 178, 0.7);
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: auto;
+  height: 3 em;
   margin: 0 auto;
   text-align: center;
   font-family: "Inter", sans-serif;

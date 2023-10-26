@@ -97,46 +97,6 @@ img{
   text-align: center;
 }
 
-.container_Zoilo_Tomas {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-
-.container_Joel_Martin{
-  display: flex;
-  justify-content: space-between;
-}
-
-.miembro {
-  text-align: center;
-  flex-wrap: wrap;
-  width: 25%;
-}
-
-.foto {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.boton {
-  width: 90%;
-  height: auto;
-  background-color: rgba(5, 98, 123, 0.5);
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 200px;
-  margin: auto;
-  font-family: "Inter",sans-serif;
-}
-
-
 footer{
   background-color: rgba(86, 193, 178, 0.7);
   position: absolute;
@@ -147,31 +107,15 @@ footer{
   text-align: center;
   font-family: "Inter", sans-serif;
 }
-
-#ManatiContainer{
+.manati {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
-}
-
-.ManatiCentro{
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: auto;
+  height: 439px;
+  width:531px;
+  
 }
-
-.ManatiCentro:hover {
-  transition: 0.5s;
-  height: auto;
-  width: 60%;
-}
-
 /* media queries */
 
 @media (max-width:1424px){
@@ -228,32 +172,4 @@ footer{
     background-color: rgba(86, 193, 178, 0.7);
   }
 
-  .ManatiCentro{
-    display: none;
-
-  }
-
 }
-
-
-/*Imágenes*/
-#imgZoilo{
-  width: 100%;
-  height: auto;
-}
-
-#imgTomas{
-  width: 100%;
-  height: auto;
-}
-
-#imgJoel{
-  width: 100%;
-  height: auto;
-}
-
-#imgMartin{
-  width: 100%;
-  height: auto;
-}
-
