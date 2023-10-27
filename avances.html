@@ -5,8 +5,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Inter&family=Marmelad&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Inter&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="avancesstyles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="JqueryCode.js"></script>
   <title>Index</title>
 </head>
 <body>
@@ -24,14 +26,220 @@
         </ul>
     </nav>
   </header>
-  <div class="container">
-    <button class="button-info">
-      <p style="font-size: 40px; font-family: 'Gorditas', cursive; margin-top: 30px; margin-bottom: 30px;">Sitio en Construcción</p>
+  <!--About Manatti-->
+  <section class="hidden">
+    <button id="about_manatti">
+      <div class="card__content">
+        <div class="card__header">
+          <img src="imgs/6789555.png" alt="" class="pp">
+          <h2 style="font-family: 'Poppins', sans-serif; color: black; font-weight: bold;">Acerca de los Manatties</h2>
+        </div>
+        <div class="card__body__AM">
+          <p class="card__text">Los manatíes son como las vacas del mar. Son grandes, regordetes y muy simpáticos. Les encanta nadar en aguas cálidas cerca de la costa y de los ríos. Pero, en lugar de hamburguesas, ¡su comida favorita son las ensaladas acuáticas!  Los manatíes son animales pacíficos y amigables, les gusta saludar a los buceadores y curiosear. </p>
+          <p class="card__text">Sin embargo, están en problemas y necesitan nuestra ayuda, ya que hay muy pocos de ellos. Están en peligro de desaparecer, así que debemos cuidar su hogar y asegurarnos de que tengan suficiente comida y espacio para vivir felices y saludables en el mar. ¡Vamos a salvar a los manatíes juntos!</p>
+        </div>
+      </div>
     </button>
+  </section>
+
+  <!--Contenedor 1-->
+  <section class="hidden">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 style="font-family: 'Poppins', sans-serif;">Presentación</h2>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+              <h2 style="font-family: 'Poppins', sans-serif;">Presentación</h2>
+            </div>
+            <div class="card__body">
+              <h3 style="font-family: 'Poppins', sans-serif;">Nuestra Misión</h3>
+              <p class="card__text">"Manatties Marvels (MM)" es una ONG que se dedica a la conservación de los manatíes en Brasil. Su sitio web tiene como objetivo informar, educar y movilizar a la comunidad en la protección de los manatíes y los ecosistemas acuáticos en Brasil. Proporciona información sobre la misión, recursos educativos, oportunidades de donación y voluntariado, noticias y éxitos, historias inspiradoras, eventos y colaboración.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 style="font-family: 'Poppins', sans-serif;">Objetivos</h2>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+              <h2 style="font-family: 'Poppins', sans-serif;">Nuestro objetivo</h2>
+            </div>
+            <div class="card__body">
+              <h3 style="font-family: 'Poppins', sans-serif;">Nosotros "Manatties Marvels" deseamos:</h3>
+              <ul class="show_this">
+                <li> <u class="bold_text">Informar sobre nuestra Misión:</u>y El sitio web presenta de manera clara y concisa la misión de: "Manatties Marvels", destacando su compromiso con la protección de los manatíes y su hábitat. </li>
+                <li> <u class="bold_text">Recurso de Educación:</u> Nuestra web proporciona una sección de recursos educativos donde se pueden encontrar artículos, videos, infografías y otros materiales educativos relacionados con los Manatties.</li>
+                <li> <u class="bold_text">Generar donaciones y voluntariado:</u> Ofrececemos información de sobre cómo las personas pueden contribuir a la causa a través de donaciones y oportunidades de voluntariado. Se incluye un formulario de donación en línea para facilitar las contribuciones.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contenedor 2-->
+  <section class="hidden">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 style="font-family: 'Poppins', sans-serif;">Forma de atraér publico</h2>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+              <h2 style="font-family: 'Poppins', sans-serif;">Nuestras estrategias son</h2>
+            </div>
+            <div class="card__body">
+              <ul class="show_this">
+                <li><u class="bold_text">Contenido de Calidad:</u> Publicamos contenido de alta calidad y relevante en el sitio web. Esto puede incluir artículos informativos sobre manatíes, la conservación marina y noticias relacionadas. El contenido útil y atractivo puede atraer visitantes y retener su interés.</li>
+                <li><u class="bold_text"> Redes Sociales:</u> Creamos perfiles en redes sociales para "Save the Sea" en plataformas como Facebook, Instagram, Twitter y LinkedIn. Comparte regularmente contenido del sitio web en estas redes y utiliza hashtags relevantes para ampliar el alcance.</li>
+                <li><u class="bold_text"> Publicidad en Redes Sociales:</u> Utilizamos publicidad paga en redes sociales para llegar a una audiencia más amplia y dirigirte a personas interesadas en la conservación marina y la protección de los manatíes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 style="font-family: 'Poppins', sans-serif;">Público</h2>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+              <h2 style="font-family: 'Poppins', sans-serif;">Nuestro Publico Objetivo Son</h2>
+            </div>
+            <div class="card__body">
+              <ul class="show_this">
+                <li>Cualquier persona con deseos de ayudar a la causa y que quiera cuidar la naturaleza</li>
+                <li>No se discrimina edad ya que nuestra causa es noble y existen muchas formas de ayudar</li>
+                <li>Personas que quieran aprender sobre los manatíes y la conservación marina</li>
+                <li>Personas que quieran donar o ser voluntarios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Contenedor 3-->
+<section class="hidden">
+  <div class="card">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2 style="font-family: 'Poppins', sans-serif;">Identidad Visual</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+            <h2 style="font-family: 'Poppins', sans-serif;">Nuestros elementos más destacados</h2>
+          </div>
+          <div class="card__body">
+            <h3 style="font-family: 'Poppins', sans-serif;">Nuestros Colores:</h3>
+            <ul class="show_this">
+              <li>Sueño Jamaicano (Azul frío): Se asocia con la verdad, la estabilidad y la seriedad, pero puede transmitir sensaciones de frialdad, insensibilidad y aislamiento.</li>
+              <li>Azul: Representa sofisticación y elegancia</li>
+              <li>Acuarela Azul: Inspira equilibrio y armonía, conectándonos con la naturaleza. Es refrescante y revitalizante.</li>
+              <li>Blanco: Evoca tranquilidad, equilibrio, elegancia, sabiduría y sutileza. Crea un ambiente relajante</li>
+              <li>Hanada Azul: Simboliza prosperidad, armonía, tranquilidad, equilibrio y paz.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="card">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2 style="font-family: 'Poppins', sans-serif;">Roles</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+            <h2 style="font-family: 'Poppins', sans-serif;">Nuestros roles asignados</h2>
+          </div>
+          <div class="card__body">
+            <ul class="show_this">
+              <li> Diseñador UX/UI → Tomas Porres</li>
+              <li> Maquetador → Martin Guimpel</li>
+              <li> Programador → Joel Solaeche</li>
+              <li>Comunicador Web → Zoilo Guzmán </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contenedor 4-->
+<section class="hidden">
+  <div class="card">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2 style="font-family: 'Poppins', sans-serif;">Prototipo</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+            <h2 style="font-family: 'Poppins', sans-serif;">Haz click en el siguiente botón para dirigirte a nuestro Prototipo: </h2>
+          </div>
+          <div class="card__body">
+            <h3 style="font-family: 'Poppins', sans-serif;">Como aportaremos a la causa</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2 style="font-family: 'Poppins', sans-serif;">¡Ayudanos!</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="imgs/fl_fig04.jpg" alt="" class="pp">
+            <h2 style="font-family: 'Poppins', sans-serif;">¡Sumate!</h2>
+          </div>
+          <div class="card__body">
+            <h3 style="font-family: 'Poppins', sans-serif;">Salva a los Manatíes: Tu Ayuda Hace la Diferencia</h3>
+            <p class="card__text">¡Los manatíes están en peligro en las aguas brasileñas debido a la pérdida de hábitat y la contaminación! Necesitamos tu apoyo, te agradecemos sí:</p>
+            <br>
+            <ul class="show_this">
+              <li>Comparte la información.</li>
+              <li>Dona para la causa.</li>
+              <li>Sé voluntario.</li>
+              <li>Sé parte de la comunidad.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <script src="animations.js"></script>
+
   <footer>
     <p>UADE, derechos reservados</p>
   </footer>
 
 </body>
+
 </html>
