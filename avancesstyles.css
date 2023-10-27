@@ -106,7 +106,6 @@ body {
     display: inline-block;
     opacity: 0.9;
     border-radius: 70px;
-
   }
 
   #about_manatti{
@@ -215,7 +214,8 @@ body {
   }
 
   .card__body {
-    padding: 30px;
+    padding: 10px;
+    text-align: center;
   }
 
   .card__body h3{
@@ -246,7 +246,20 @@ body {
     font-size: 18px;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+  }
+
+  .button-info-card{
+    font-size: 40px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    border-radius: 60px;
+    border: none;
+    width: 70%;
+    height: auto;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    
   }
 
 
@@ -268,6 +281,14 @@ body {
 
 .bold_text {
   font-weight: bold;
+}
+
+.show_this{
+  font-family: 'Poppins', sans-serif;
+}
+
+.link{
+  color: #fff;
 }
 
 
@@ -396,7 +417,6 @@ footer{
     font-size: 13px;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
   }
 
   .card {
@@ -409,6 +429,13 @@ footer{
     border-radius: 70px;
 
   }
+
+  .link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+  }
+  
 
 
 }
