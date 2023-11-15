@@ -4,7 +4,6 @@ html{
   box-sizing: border-box;
 }
 body {
-  background-image: url(imgs/image\ 19.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center 0;
@@ -26,8 +25,8 @@ label{
 img{
   width: 94px;
   height: 81px;
+  margin-left: 40px;
 }
-
 
 
 .header{
@@ -38,12 +37,12 @@ img{
 }
 
 .header-container{
-  font-size: 30px;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(86, 193, 178, 0.7);
-  height: auto;
+  background-color: rgb(86, 193, 178);
+  height: 85px;
   width: 100%;
   
 }
