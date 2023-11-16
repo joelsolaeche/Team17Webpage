@@ -95,11 +95,26 @@ img{
   min-height: 100vh;
   position: relative;
   text-align: center;
+  background-color: rgba(86, 193, 178);
+  border-radius: 70px;
+}
+
+.container2{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  background-color: rgb(8, 64, 89);
+  border-radius: 70px;
 }
 
 .img-fluid {
   width: 100%;
   height: auto;
+  border-radius: 70px;
 }
 
 footer{
