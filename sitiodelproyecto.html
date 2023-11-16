@@ -25,10 +25,18 @@
     </nav>
     <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(86, 193, 178, 1)" offset="0%"></stop><stop stop-color="rgba(5, 210, 181, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L16,23.3C32,37,64,63,96,65C128,67,160,43,192,31.7C224,20,256,20,288,21.7C320,23,352,27,384,23.3C416,20,448,10,480,18.3C512,27,544,53,576,68.3C608,83,640,87,672,80C704,73,736,57,768,51.7C800,47,832,53,864,53.3C896,53,928,47,960,45C992,43,1024,47,1056,40C1088,33,1120,17,1152,8.3C1184,0,1216,0,1248,11.7C1280,23,1312,47,1344,51.7C1376,57,1408,43,1440,38.3C1472,33,1504,37,1536,33.3C1568,30,1600,20,1632,18.3C1664,17,1696,23,1728,28.3C1760,33,1792,37,1824,43.3C1856,50,1888,60,1920,58.3C1952,57,1984,43,2016,41.7C2048,40,2080,50,2112,53.3C2144,57,2176,53,2208,51.7C2240,50,2272,50,2288,50L2304,50L2304,100L2288,100C2272,100,2240,100,2208,100C2176,100,2144,100,2112,100C2080,100,2048,100,2016,100C1984,100,1952,100,1920,100C1888,100,1856,100,1824,100C1792,100,1760,100,1728,100C1696,100,1664,100,1632,100C1600,100,1568,100,1536,100C1504,100,1472,100,1440,100C1408,100,1376,100,1344,100C1312,100,1280,100,1248,100C1216,100,1184,100,1152,100C1120,100,1088,100,1056,100C1024,100,992,100,960,100C928,100,896,100,864,100C832,100,800,100,768,100C736,100,704,100,672,100C640,100,608,100,576,100C544,100,512,100,480,100C448,100,416,100,384,100C352,100,320,100,288,100C256,100,224,100,192,100C160,100,128,100,96,100C64,100,32,100,16,100L0,100Z"></path></svg>
   </header>
-  <div class="container">
-    <button class="button-info">
-      <p style="font-size: 40px; font-family: 'Gorditas', cursive; margin-top: 30px; margin-bottom: 30px;">Sitio en Construcción</p>
-    </button>
+  <div class="container_imagen_texto">
+
+      <div class="imagen_izquierda">
+        <img src="imgs/persona-con-manatí.jpg" alt="">
+      </div>
+
+      <div class="container_titulo_descripción">
+        <h1 class="titulo">Título</h1>
+        <br>
+        <h2 class="texto">Texto de la descripción para el proyecto irbflhBFYe</h2>
+      </div>
+
   </div>
   <footer>
     <p>UADE, derechos reservados</p>
@@ -36,3 +44,37 @@
 
 </body>
 </html>
+
+<style>
+    .container_imagen_texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    margin: 20px; 
+    border: 7px solid #000;
+  }
+
+  .imagen_izquierda {
+    flex-shrink: 0; 
+    margin-right: 70px; 
+  }
+
+  .imagen_izquierda img {
+    width: 100%; 
+    height: 240px;
+    display: block;
+  }
+
+  .container_titulo_descripción {
+    width: 600px;
+  }
+
+  h1.titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  h2.texto {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+  }
+</style>
