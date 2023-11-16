@@ -1,0 +1,173 @@
+html{
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(imgs/image\ 11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center 0;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+header{
+  width: 100%;
+  margin: 0;
+  position: relative;
+  height: auto;
+  background-color: rgba(rgba(86, 193, 178, 0.7));
+}
+
+.header-container{
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(86, 193, 178, 0.7);
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+main{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.container{
+  align-self: center;
+  width: 100%;
+}
+
+.button-info {
+  font-size: 40px;
+  background-color: rgba(8, 64, 89, 0.5);
+  color: #fff;
+  border-radius: 200px;
+  border: none;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 50%;
+}
+
+input{
+  display: none;
+}
+label{
+  display: none;
+}
+img{
+  width: 94px;
+  height: 81px;
+  align-self: flex-start;
+}
+
+.button-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-list li a {
+  padding: 15px 50px 15px 50px;
+  background-color: rgba(8, 64, 89, 0.5);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 200px;
+  font-family: "Inter", sans-serif;
+}
+
+.button-list li a:hover {
+  background-color: rgba(0, 23, 34, 0.5);
+  transition: 0.5s;
+}
+
+footer{
+  background-color: rgba(86, 193, 178, 0.7);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* media queries */
+
+@media (max-width:1424px){
+  .button-list li a {
+    font-size: 20px;
+    padding: 2px 30px 2px 30px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+  input:checked ~ ul {
+    display: block;
+  }
+
+  .button-list li a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+
+
+  li {
+    margin: 15px;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: rgba(86, 193, 178, 0.7);
+
+  }
+
+  ul {
+    display: none;
+    background-color: rgba(86, 193, 178, 0.7);
+  }
+
+}
+
+

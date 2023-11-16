@@ -1,0 +1,259 @@
+html{
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(imgs/image\ 16.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center 0;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+input{
+  display: none;
+}
+label{
+  display: none;
+}
+img{
+  width: 94px;
+  height: 81px;
+}
+
+
+
+.header{
+  width: 100%;
+  margin: 0;
+  position: relative;
+  height: auto;
+}
+
+.header-container{
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(86, 193, 178, 0.7);
+  height: auto;
+  width: 100%;
+  
+}
+
+
+.button-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button-list li a {
+  padding: 15px 50px 15px 50px;
+  background-color: rgba(8, 64, 89, 0.5);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 200px;
+  font-family: "Inter", sans-serif;
+}
+
+.button-list li a:hover {
+  background-color: rgba(0, 23, 34, 0.5);
+  transition: 0.5s;
+}
+
+.button-info {
+  font-size: 40px;
+  background-color: rgba(8, 64, 89, 0.5);
+  color: #fff;
+  border-radius: 200px;
+  border: none;
+  width: 100%;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-family: "Marmelad", sans-serif;
+  height: 50%;
+}
+
+.container{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.container_Zoilo_Tomas {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.container_Joel_Martin{
+  display: flex;
+  justify-content: space-between;
+}
+
+.miembro {
+  text-align: center;
+  flex-wrap: wrap;
+  width: 25%;
+}
+
+.foto {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.boton {
+  width: 90%;
+  height: auto;
+  background-color: rgba(5, 98, 123, 0.5);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 200px;
+  margin: auto;
+  font-family: "Inter",sans-serif;
+}
+
+
+footer{
+  background-color: rgba(86, 193, 178, 0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3 em;
+  margin: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+#ManatiContainer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.ManatiCentro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+.ManatiCentro:hover {
+  transition: 0.5s;
+  height: auto;
+  width: 60%;
+}
+
+/* media queries */
+
+@media (max-width:1424px){
+  .button-list li a {
+    font-size: 20px;
+    padding: 2px 30px 2px 30px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+  input:checked ~ ul {
+    display: block;
+  }
+
+  .button-list li a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+
+
+  li {
+    margin: 15px;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: rgba(86, 193, 178, 0.7);
+
+  }
+
+  ul {
+    display: none;
+    background-color: rgba(86, 193, 178, 0.7);
+  }
+
+  .ManatiCentro{
+    display: none;
+
+  }
+
+}
+
+
+/*Imágenes*/
+#imgZoilo{
+  width: 100%;
+  height: auto;
+}
+
+#imgTomas{
+  width: 100%;
+  height: auto;
+}
+
+#imgJoel{
+  width: 100%;
+  height: auto;
+}
+
+#imgMartin{
+  width: 100%;
+  height: auto;
+}
+
