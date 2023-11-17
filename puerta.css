@@ -1,0 +1,462 @@
+html{
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(imgs/noaa-8EXZXZrj3Tw-unsplash.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position:center 0;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  }
+
+  input{
+    display: none;
+  }
+  label{
+    display: none;
+  }
+  img{
+    width: 94px;
+    height: 81px;
+  }
+
+
+
+  .header{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    height: auto;
+  }
+
+  .header-container{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(86, 193, 178, 0.7);
+    height: auto;
+    width: 100%;
+    
+  }
+
+
+  .button-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .button-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .button-list li a {
+    padding: 15px 50px 15px 50px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .button-list li a:hover {
+    background-color: rgba(0, 23, 34, 0.5);
+    transition: 0.5s;
+  }
+
+  .button-info {
+    font-size: 40px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    border-radius: 200px;
+    border: none;
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-family: "Marmelad", sans-serif;
+    height: 50%;
+  }
+
+  .button-info:hover {
+    background-color: rgba(0, 23, 34, 0.5);
+    transition: 0.5s;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    margin: 100px auto 0;
+    width: 45%;
+    height: 80%;
+    perspective: 1000px;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 70px;
+  }
+
+  #about_manatti{
+    margin: 30px auto 0;
+    width: 60%;
+    height: auto;
+    perspective: 1000px;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 70px;
+    background-color: rgba(24, 151, 151, 0.5);
+    border: none;
+  }
+
+  .card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    background-color:  rgb(24, 151, 151);
+    border-radius: 70px;
+
+  }
+
+  .card__inner.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card__face{
+    background-image: url(imgs/rayyu-maldives-S7td7RmQfs0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 70px;
+    box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
+
+
+  }
+
+  .card__face--front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .card__face--front h2{
+    color: #fff;
+    font-size: 32px;
+    align-items: center;
+  }
+
+  .card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+  }
+
+  .card__content {
+    width: 100%;
+    height: auto;
+  }
+
+  .card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+  }
+
+  .card__header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary), 10%, var(--secondary) 115%);
+  }
+
+  .pp{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+  }
+
+  .card__header h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card__body {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card__body h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .card__body p{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card__text{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .button-info-card{
+    font-size: 40px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    border-radius: 60px;
+    border: none;
+    width: 70%;
+    height: auto;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  .contenedor-bmanatee{
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .baby-manatee{
+    width: 200px;
+    height: auto;
+    border-radius: 70px;
+  }
+
+
+
+  
+  /* test */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.bold_text {
+  font-weight: bold;
+}
+
+.show_this{
+  font-family: 'Poppins', sans-serif;
+}
+
+.link{
+  color: #fff;
+}
+
+
+footer{
+  background-color: rgba(86, 193, 178, 0.7);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  margin: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+/* media queries */
+
+@media (max-width:1424px){
+  .button-list li a {
+    font-size: 20px;
+    padding: 2px 30px 2px 30px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@media (max-width: 920px){
+  .card__body p{
+    color: var(--dark);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  video{
+    width: 400px;
+    height: auto;
+  }
+
+}
+
+
+
+@media (max-width: 550px) {
+  input:checked ~ ul {
+    display: block;
+  }
+
+  .show_this{
+    display:contents;
+  }
+
+  .button-list li a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(8, 64, 89, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: "Inter", sans-serif;
+  }
+
+
+  li {
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: rgba(86, 193, 178, 0.7);
+
+  }
+
+  ul {
+    display: none;
+    background-color: rgba(86, 193, 178, 0.7);
+  }
+
+  .card__title{
+    font-size: 20px;
+  }
+
+  video{
+    width: 200px;
+    height: auto;
+  }
+  /* Start of the card */
+
+  .card__face--front h2{
+    color: #fff;
+    font-size: 16px;
+    
+  }
+
+  .card__header h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card__body h3{
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .card__body p{
+    color: var(--dark);
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .card__body {
+    padding: 0 5px 0 5px;
+    
+  }
+
+  .card__text{
+    color: var(--dark);
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .card {
+    margin: 100px auto 0;
+    width: 48%;
+    height: 80%;
+    perspective: 1000px;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 70px;
+
+  }
+
+  .link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+
+
+}
