@@ -145,13 +145,13 @@ footer{
 
 
 @media (max-width: 550px) {
-  input:checked ~ ul {
+  input:checked ~ .button-list {
     display: block;
   }
 
   .button-list li a {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 5px;
     background-color: rgba(8, 64, 89, 0.5);
     color: #fff;
     text-decoration: none;
@@ -163,6 +163,9 @@ footer{
   li {
     margin: 15px;
   }
+
+
+  
 
   label {
     box-sizing: border-box;
@@ -179,7 +182,7 @@ footer{
 
   }
 
-  ul {
+  .button-list {
     display: none;
     background-color: rgba(86, 193, 178, 0.7);
   }
